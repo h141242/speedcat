@@ -4,6 +4,7 @@ new Env('闪电猫机场签到');
 '''
 
 import os
+import datetime
 import requests 
 from notify import send  # 导入青龙消息通知模块
 
