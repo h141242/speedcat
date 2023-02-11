@@ -24,9 +24,9 @@ def main(*args):
     print(html_code)
 
     if html_code['ret']=='1':
-        msg.append("签到成功")
+        end('闪电猫机场签到', '💖签到成功\n\n本通知 By HY-闪电猫机场\n通知时间:' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     else:
-        msg.append("签到失败")
+        send('闪电猫机场签到', '💖签到失败\n\n本通知 By HY-闪电猫机场\n通知时间:' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 
 if __name__ == '__main__':
