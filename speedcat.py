@@ -27,7 +27,7 @@ def main(*args):
     #{"msg":"您获得了 0 MB流量","ret":1}
     #{'ret': 0, 'msg': '您似乎已经签到过了...'}
 
-    if html_code['ret']=='1':
+    if html_code['ret']==1:
         end('闪电猫机场签到', '💖签到成功\n\n本通知 By HY-闪电猫机场\n通知时间:' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     else:
         send('闪电猫机场签到', '💖签到失败\n\n本通知 By HY-闪电猫机场\n通知时间:' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
